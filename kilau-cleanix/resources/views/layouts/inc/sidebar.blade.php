@@ -1,9 +1,9 @@
 <div class="sidebar" data-color="white" data-active-color="danger">
       <div class="logo">
         <a href="#" class="simple-text logo-mini">
-          <div class="logo-image-small">
+          <!-- <div class="logo-image-small">
             <img src="..\assets\img\kilaucleanixlogo.png">
-          </div>
+          </div> -->
           <!-- <p>CT</p> -->
         </a>
         <a href="#" class="simple-text logo-normal">
@@ -22,9 +22,15 @@
             </a>
           </li>
           <li>
-            <a href="./icons.html">
+            <a href="{{ url('services')}}">
               <i class="nc-icon nc-diamond"></i>
-              <p>Icons</p>
+              <p>Services</p>
+            </a>
+          </li>
+          <li>
+            <a href="{{ url('add-services') }}">
+              <i class="nc-icon nc-caps-small"></i>
+              <p>Add Services</p>
             </a>
           </li>
           <li>
@@ -49,12 +55,6 @@
             <a href="./tables.html">
               <i class="nc-icon nc-tile-56"></i>
               <p>Table List</p>
-            </a>
-          </li>
-          <li>
-            <a href="./typography.html">
-              <i class="nc-icon nc-caps-small"></i>
-              <p>Typography</p>
             </a>
           </li>
           <li class="active-pro">

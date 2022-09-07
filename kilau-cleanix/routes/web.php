@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\FrontendController;
+use App\Http\Controllers\Admin\ServiceController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,7 +29,12 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::group(['middleware' => ['auth', 'isAdmin']], function (){
-    Route::get('/dashboard', function(){
-        return view('admin.index');
-    });
+
+    Route::get('/dashboard', 'App\Http\Controllers\Admin\FrontendController@index');
+    Route::get('services','App\Http\Controllers\Admin\ServiceController@index');
+    Route::get('add-services','App\Http\Controllers\Admin\ServiceController@add' );
+    Route::post('insert-service','App\Http\Controllers\Admin\ServiceController@insert');
+    Route::get('edit-serv/{id}', [ServiceController::class, 'edit']);
+    Route::get('update-service/{id}',[ServiceController::class,'update']);
 });
+

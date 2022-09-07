@@ -7,6 +7,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\Type\NullType;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,14 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     public const HOME = '/home';
-
+        /**
+     * The path to the "home" route for your application.
+     *
+     * Typically, users are redirected here after authentication.
+     *
+     * @var string|null
+     */
+    protected $namespace = 'App\\Http\\Controllers';
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
      *

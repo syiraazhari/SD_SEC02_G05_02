@@ -23,6 +23,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('admin/css/paper-dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('admin/css/custom.css') }}" rel="stylesheet">
 
 </head>
 <body>
