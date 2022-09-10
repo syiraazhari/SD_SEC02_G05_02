@@ -6,7 +6,7 @@
             <h4>Edit and Update Service</h4>
         </div>
         <div class="card-body">
-            <form action="{{ url('update-service/'.$service->id) }}" method="PUT" enctype="multipart/form-data">
+            <form action="{{ url('update-service/'.$service->id) }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 @method('PUT')
                 <div class="col-md-6 mb-3">
