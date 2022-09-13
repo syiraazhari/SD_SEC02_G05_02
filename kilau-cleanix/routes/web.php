@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\Admin\ServiceController;
+use App\Http\Controllers\Frontend\FrontController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,9 +17,11 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('layouts.front');
+// });
+
+Route::get('/', [FrontController::class, 'index']);
 
 Auth::routes();
 
