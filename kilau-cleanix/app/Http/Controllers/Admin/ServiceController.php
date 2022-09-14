@@ -77,4 +77,19 @@ class ServiceController extends Controller
         return redirect('dashboard')->with('status',"Category updated successfully");
 
     }
+
+    public function destroy($id)
+    {
+        $service = Service::find($id);
+        if($service->image)
+        {
+            $path='assets/uploads/service/'.$service->image;
+            if(File::exists($path))
+            {
+                File::delete($path);
+            }
+        }
+        $service->delete();
+        return redirect('service')->with('status',"Service Deleted Successfully");
+    }
 }
