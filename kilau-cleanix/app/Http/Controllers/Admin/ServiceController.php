@@ -83,13 +83,13 @@ class ServiceController extends Controller
         $service = Service::find($id);
         if($service->image)
         {
-            $path='assets/uploads/service/'.$service->image;
+            $path = 'assets/uplaods/service/'.$service->image;
             if(File::exists($path))
             {
                 File::delete($path);
             }
         }
         $service->delete();
-        return redirect('service')->with('status',"Service Deleted Successfully");
+        return redirect('services')->with('status',"Service deleted successfully");
     }
 }

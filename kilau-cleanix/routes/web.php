@@ -39,6 +39,6 @@ Route::group(['middleware' => ['auth', 'isAdmin']], function (){
     Route::post('insert-service','App\Http\Controllers\Admin\ServiceController@insert');
     Route::get('edit-serv/{id}', [ServiceController::class, 'edit']);
     Route::put('update-service/{id}',[ServiceController::class,'update']);
-    Route::get('delete-category//{id}',[ServiceController::class,'destroy']);
+    Route::get('delete-service/{id}',[ServiceController::class,'destroy']);
 });
 
