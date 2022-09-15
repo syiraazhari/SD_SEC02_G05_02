@@ -1,3 +1,6 @@
+<link href="{{ asset('frontend/css/bootstrap5.css') }}" rel="stylesheet">
+<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet">
+
 <section data-bs-version="5.1" class="menu cid-s48OLK6784" once="menu" id="menu1-h">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -42,17 +45,19 @@
                                 <a class="nav-link link text-black display-4" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @endif
-                        @else
-                            <li class="nav-item dropdown">
+                    @else
+                            <li class="nav-item nav-dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle link text-black display-4" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end link text-black display-4" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item link text-black display-4" href="#">My Profile</a>
+                                    <a class="dropdown-item link text-black display-4" href="{{ route('profile') }}">
+                                        My Profile
+                                    </a>
                                     <a class="dropdown-item link text-black display-4" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                                        onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 

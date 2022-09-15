@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\FrontendController;
 use App\Http\Controllers\Admin\ServiceController;
 use App\Http\Controllers\Frontend\FrontController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -23,9 +24,13 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', [FrontController::class, 'index']);
 
-Auth::routes();
+Route::get('profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
+Route::get('edit-profile', [App\Http\Controllers\HomeController::class, 'editprofile'])->name('edit-profile');
+Route::put('update-profile', [HomeController::class, 'update']);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('change-password', [App\Http\Controllers\HomeController::class, 'changePassword'])->name('change-password');
+Route::post('change-password', [App\Http\Controllers\HomeController::class, 'updatePassword'])->name('update-password');
+
 
 Auth::routes();
 
