@@ -1,11 +1,21 @@
 <?php
 
-use App\Http\Controllers\Admin\FrontendController;
-use App\Http\Controllers\Admin\ServiceController;
-use App\Http\Controllers\Frontend\FrontController;
-use App\Http\Controllers\HomeController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\AboutUsComponent;
+use App\Http\Livewire\Admin\AdminAddServiceCategoryComponent;
+use App\Http\Livewire\Admin\AdminContactComponent;
+use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Admin\AdminEditServiceCategoryComponent;
+use App\Http\Livewire\Admin\AdminServiceCategoryComponent;
+use App\Http\Livewire\Admin\AdminServiceComponent;
+use App\Http\Livewire\ContactComponent;
+use App\Http\Livewire\Customer\CustomerDashboardComponent;
+use App\Http\Livewire\KilauCleanix2;
+use App\Http\Livewire\ServiceCategoriesComponent;
+use App\Http\Livewire\User\UserChangePasswordComponent;
+use App\Http\Livewire\User\UserEditProfileComponent;
+use App\Http\Livewire\User\UserProfileComponent;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,31 +29,38 @@ use Illuminate\Support\Facades\Auth;
 */
 
 // Route::get('/', function () {
-//     return view('layouts.front');
+//     return view('welcome');
 // });
 
-Route::get('/', [FrontController::class, 'index']);
+//Auth::routes(['verify'=> true]);
 
-Route::get('profile', [App\Http\Controllers\HomeController::class, 'profile'])->name('profile');
-Route::get('edit-profile', [App\Http\Controllers\HomeController::class, 'editprofile'])->name('edit-profile');
-Route::put('update-profile', [HomeController::class, 'update']);
-
-Route::get('change-password', [App\Http\Controllers\HomeController::class, 'changePassword'])->name('change-password');
-Route::post('change-password', [App\Http\Controllers\HomeController::class, 'updatePassword'])->name('update-password');
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::group(['middleware' => ['auth', 'isAdmin']], function (){
-
-    Route::get('/dashboard', 'App\Http\Controllers\Admin\FrontendController@index');
-    Route::get('services','App\Http\Controllers\Admin\ServiceController@index');
-    Route::get('add-services','App\Http\Controllers\Admin\ServiceController@add' );
-    Route::post('insert-service','App\Http\Controllers\Admin\ServiceController@insert');
-    Route::get('edit-serv/{id}', [ServiceController::class, 'edit']);
-    Route::put('update-service/{id}',[ServiceController::class,'update']);
-    Route::get('delete-service/{id}',[ServiceController::class,'destroy']);
+Route::get('/',KilauCleanix2::class)->name('home');
+Route::get('/service-categories',ServiceCategoriesComponent::class)->name('home.service_categories');
+Route::get('/contact-us',ContactComponent::class)->name('home.contact');
+Route::get('/about-us',AboutUsComponent::class)->name('home.about_us');
+//For Customer
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/user/profile',UserProfileComponent::class)->name('user.profile');
+    Route::get('/customer/dashboard',CustomerDashboardComponent::class)->name('customer.dashboard');
+    Route::get('/user/profile/edit',UserEditProfileComponent::class)->name('user.editprofile');
+    Route::get('/user/change-password',UserChangePasswordComponent::class)->name('user.changepassword');
 });
 
+
+//For Admin
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified','authadmin'
+])->group(function () {
+    Route::get('/admin/dashboard',AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('/admin/service-categories', AdminServiceCategoryComponent::class)->name('admin.service_categories');
+    Route::get('/admin/service-category/add', AdminAddServiceCategoryComponent::class)->name('admin.add_service_category');
+    Route::get('/admin/service-category/edit/{category_id}',AdminEditServiceCategoryComponent::class)->name('admin.edit_service_category');
+    Route::get('/admin/all-services',AdminServiceComponent::class)->name('admin.all_services');
+    Route::get('/admin/contacts',AdminContactComponent::class)->name('admin.contacts');
+});
