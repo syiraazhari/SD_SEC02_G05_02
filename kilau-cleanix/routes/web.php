@@ -32,7 +32,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-//Auth::routes(['verify'=> true]);
+// Auth::routes(['verify'=> true]);
 
 Route::get('/',KilauCleanix2::class)->name('home');
 Route::get('/service-categories',ServiceCategoriesComponent::class)->name('home.service_categories');
