@@ -42,7 +42,7 @@
                     <div class="col-md-12">
                         <ul id="sponsors" class="tooltip-hover">
                             <li data-toggle="tooltip" title="" data-original-title="AC"> <a
-                                    href="servicesbycategory/1.html"><img src="{{ asset('images/sercat/service-icon.png')}}"
+                                    href="servicesbycategory/1.html"><img src="{{ asset('images\categories\1521969345.png')}}"
                                         alt="AC"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Beauty"> <a
                                     href="servicesbycategory/2.html"><img src="{{ asset('images/sercat/service')}}"
