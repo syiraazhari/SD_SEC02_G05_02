@@ -66,34 +66,34 @@
                                     href="servicesbycategory/8.html"><img src="{{ asset('images\categories\1521969464.png')}}"
                                         alt="Pest Control"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Chimney Hob"> <a
-                                    href="servicesbycategory/9.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/9.html"><img src="{{ asset('images\categories\1521969490.png')}}"
                                         alt="Chimney Hob"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Water Purifier"> <a
-                                    href="servicesbycategory/10.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/10.html"><img src="{{ asset('images\categories\1521969512.png')}}"
                                         alt="Water Purifier"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Computer Repair"> <a
-                                    href="servicesbycategory/11.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/11.html"><img src="{{ asset('images\categories\1521969522.png')}}"
                                         alt="Computer Repair"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="TV"> <a
-                                    href="servicesbycategory/12.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/12.html"><img src="{{ asset('images\categories\1521969536.png')}}"
                                         alt="TV"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Refrigerator"> <a
-                                    href="servicesbycategory/13.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/13.html"><img src="{{ asset('images\categories\1521969558.png')}}"
                                         alt="Refrigerator"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Geyser"> <a
-                                    href="servicesbycategory/14.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/14.html"><img src="{{ asset('images\categories\1521969576.png')}}"
                                         alt="Geyser"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Car"> <a
-                                    href="servicesbycategory/15.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/15.html"><img src="{{ asset('images\categories\1521969599.png')}}"
                                         alt="Car"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Document"> <a
-                                    href="servicesbycategory/16.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/16.html"><img src="{{ asset('images\categories\1521969622.png')}}"
                                         alt="Document"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Movers &amp; Packers"> <a
-                                    href="servicesbycategory/17.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/17.html"><img src="{{ asset('images\categories\1521972593.png')}}"
                                         alt="Movers &amp; Packers"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Home Automation"> <a
-                                    href="servicesbycategory/18.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/18.html"><img src="{{ asset('images\categories\1521972624.png')}}"
                                         alt="Home Automation"></a></li>
                         </ul>
                     </div>
