@@ -45,25 +45,25 @@
                                     href="servicesbycategory/1.html"><img src="{{ asset('images\categories\1521969345.png')}}"
                                         alt="AC"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Beauty"> <a
-                                    href="servicesbycategory/2.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/2.html"><img src="{{ asset('images\categories\1521969358.png')}}"
                                         alt="Beauty"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Plumbing"> <a
-                                    href="servicesbycategory/3.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/3.html"><img src="{{ asset('images\categories\1521969409.png')}}"
                                         alt="Plumbing"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Electrical"> <a
-                                    href="servicesbycategory/4.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/4.html"><img src="{{ asset('images\categories\1521969419.png')}}"
                                         alt="Electrical"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Shower Filter"> <a
-                                    href="servicesbycategory/5.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/5.html"><img src="{{ asset('images\categories\1521969430.png')}}"
                                         alt="Shower Filter"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Home Cleaning"> <a
-                                    href="servicesbycategory/6.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/6.html"><img src="{{ asset('images\categories\1521969446.png')}}"
                                         alt="Home Cleaning"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Carpentry"> <a
-                                    href="servicesbycategory/7.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/7.html"><img src="{{ asset('images\categories\1521969454.png')}}"
                                         alt="Carpentry"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Pest Control"> <a
-                                    href="servicesbycategory/8.html"><img src="{{ asset('images/sercat/service')}}"
+                                    href="servicesbycategory/8.html"><img src="{{ asset('images\categories\1521969464.png')}}"
                                         alt="Pest Control"></a></li>
                             <li data-toggle="tooltip" title="" data-original-title="Chimney Hob"> <a
                                     href="servicesbycategory/9.html"><img src="{{ asset('images/sercat/service')}}"
