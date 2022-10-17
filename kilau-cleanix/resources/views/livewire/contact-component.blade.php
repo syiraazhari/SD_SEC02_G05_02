@@ -27,17 +27,16 @@
                             <aside>
                                 <h4>The Office</h4>
                                 <address>
-                                    <strong>SurfsideMedia Home Services.</strong><br>
-                                    <i class="fa fa-map-marker"></i><strong>Address: </strong>Faridabad, Haryana,
-                                    India<br>
-                                    <i class="fa fa-phone"></i><strong>Phone: </strong> +91-1234567890
+                                    <strong>Kilau Cleanix Services.</strong><br>
+                                    <i class="fa fa-map-marker"></i><strong>Address: </strong>Platinum Splendor Residensi Semarak, Kuala Lumpur, No. 4, Jalan Lestari, Kampung Padang Tembak, 54000 Kuala Lumpur, Federal Territory of Kuala Lumpur<br>
+                                    <i class="fa fa-phone"></i><strong>Phone: </strong> +60-123456789
                                 </address>
                                 <address>
-                                    <strong>SurfsideMedia Emails</strong><br>
+                                    <strong>Kilau Cleanix Emails</strong><br>
                                     <i class="fa fa-envelope"></i><strong>Email:</strong><a
-                                        href="mailto:contact@surfsidemedia.in"> contact@surfsidemedia.in</a><br>
+                                        href="mailto:contact@kilaucleanix.in"> contact@kilaucleanix.in</a><br>
                                     <i class="fa fa-envelope"></i><strong>Email:</strong><a
-                                        href="mailto:support@surfsidemedia.in"> support@surfsidemedia.in</a>
+                                        href="mailto:support@kilaucleanix.in"> support@kilaucleanix.in</a>
                                 </address>
                             </aside>
                             <hr class="tall">

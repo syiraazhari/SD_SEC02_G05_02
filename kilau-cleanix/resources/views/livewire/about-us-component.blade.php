@@ -24,11 +24,10 @@
                     <div class="services-lines-info padding-sides color-white">
                         <h2>TEAM MEMBERS</h2>
                         <p class="lead">
-                            Select ServeExpo.
+                            Kilau Cleanix Members
                             <span class="line"></span>
                         </p>
-                        <p>Book cheap hotels and make payment facilities, free cancellation when the hotel so
-                            provides, compare prices and find all the options for your vacation.</p>
+                        <p>Meet our teams</p>
                         <br>
                         <a href="#" class="btn btn-primary">View Details</a>
                     </div>
@@ -39,26 +38,10 @@
                             <div class="item-team-01">
                                 <img src="assets/img/team/1.jpg" alt="">
                                 <div class="info-team">
-                                    <h4>Federick Gordon
-                                        <span>Director Hotels</span>
+                                    <h4>MOHAMMAD IZZMIR BIN NORZAMANI
+                                        <span>Programmer</span>
                                     </h4>
-                                    <p>We are a team of productive and efficient people in our trabajo.estamos
-                                        to help with whatever you need.</p>
-                                    <ul class="social-team">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="item-team-01">
-                                <img src="assets/img/team/2.jpg" alt="">
-                                <div class="info-team">
-                                    <h4>Federick Gordon
-                                        <span>Director Hotels</span>
-                                    </h4>
-                                    <p>We are a team of productive and efficient people in our trabajo.estamos
-                                        to help with whatever you need.</p>
+                                    <p>Leader and also a back end programmer.</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -69,11 +52,38 @@
                             <div class="item-team-01">
                                 <img src="assets/img/team/3.jpg" alt="">
                                 <div class="info-team">
-                                    <h4>Federick Gordon
-                                        <span>Director Hotels</span>
+                                    <h4>MUHAMMAD RAIS IRFAN BIN A.K MOHAMED RAFIQ
+                                        <span>Programmer</span>
                                     </h4>
-                                    <p>We are a team of productive and efficient people in our trabajo.estamos
-                                        to help with whatever you need.</p>
+                                    <p>Back end programmer</p>
+                                    <ul class="social-team">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-team-01">
+                                <img src="assets/img/team/2.jpg" alt="">
+                                <div class="info-team">
+                                    <h4>VIKING MANSON
+                                        <span>Programmer</span>
+                                    </h4>
+                                    <p>Front end programmer</p>
+                                    <ul class="social-team">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-team-01">
+                                <img src="assets/img/team/3.jpg" alt="">
+                                <div class="info-team">
+                                    <h4>MUHAMMAD ISYRAF AHNAF BIN MOHAMAD ZAMRI
+                                        <span>Documentation</span>
+                                    </h4>
+                                    <p>Documentation</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -84,11 +94,24 @@
                             <div class="item-team-01">
                                 <img src="assets/img/team/4.jpg" alt="">
                                 <div class="info-team">
-                                    <h4>Federick Gordon
-                                        <span>Director Hotels</span>
+                                    <h4>MUHAMMAD THIA THAQIF BIN SHAHRUL AKBAR
+                                        <span>Documentation</span>
                                     </h4>
-                                    <p>We are a team of productive and efficient people in our trabajo.estamos
-                                        to help with whatever you need.</p>
+                                    <p>Documentation</p>
+                                    <ul class="social-team">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item-team-01">
+                                <img src="assets/img/team/2.jpg" alt="">
+                                <div class="info-team">
+                                    <h4>WAN NUR FATHIYA BINTI WAN MOHD FAUZI
+                                        <span>Documentation</span>
+                                    </h4>
+                                    <p>Documentation</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -108,26 +131,23 @@
                 <div class="row">
                     <div class="col-md-6">
                         <h3>Some words about us</h3>
-                        <p>You can choose your favorite destination and start planning your long-awaited
-                            vacation. We offer thousands of destinations and have a wide variety of hotels so
-                            that you can host and enjoy your stay without problems. Book now your trip
-                            ServeExpo.com.</p>
-                        <h3>Why we are different</h3>
+                        <p>This website provides professional cleaning services to
+                            customers in the Kuala Lumpur area. Customers may simply arrange an appointment for a cleaning
+                            service that meets all of their requirements through our website. Cleanliness is vital for maintaining
+                            a positive environment.</p>
+                        <h3>Our Speciality</h3>
                         <div class="row">
                             <div class="col-md-6">
                                 <ul class="list-styles">
-                                    <li><i class="fa fa-check"></i> <a href="#">World Travel</a></li>
-                                    <li><i class="fa fa-check"></i> <a href="#">First Class Flights</a></li>
-                                    <li><i class="fa fa-check"></i> <a href="#">5 Star Accommodations</a></li>
-                                    <li><i class="fa fa-check"></i> <a href="#">Inclusive Packages</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">Ease Of Use</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">First Class Cleaning</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">Inclusive Cleaning Packages</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="list-styles">
-                                    <li><i class="fa fa-check"></i> <a href="#">Latest Model Vehicles</a></li>
                                     <li><i class="fa fa-check"></i> <a href="#">Best Price Guarantee</a></li>
-                                    <li><i class="fa fa-check"></i> <a href="#">Great Experience</a></li>
-                                    <li><i class="fa fa-check"></i> <a href="#">Great Travel Theme</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">Great Support Staff</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -168,18 +188,19 @@
                         <div class="container">
                             <div class="row">
                                 <div class="titles">
-                                    <h2><span>¿</span>Why <span>Book</span> in SurfsideMedia<span>?</span></h2>
+                                    <h2><span>¿</span>Why <span>Clean</span> in Kilau Cleanix<span>?</span></h2>
                                     <i class="fa fa-plane"></i>
                                     <hr class="tall">
                                 </div>
                             </div>
                         </div>
-                        <p>Find a wide variety of airline tickets and cheap flights, hotels, tour packages, car
-                            rentals, cruises and more in ServeExpo.com.You can choose your favorite destination
-                            and start planning your long-awaited vacation. You can also check availability of
-                            flights and hotels quickly and easily, in order to find the option that best suits
-                            your needs.Book cheap hotels and make payment facilities, free cancellation when the
-                            hotel so provides, compare prices and find all the options for your vacation.</p>
+                        <p>Given the number of households that do
+                            not have a maid or personal cleaner, our cleaning service systems have taken the effort to provide
+                            ideal services to individuals who wish to pay less while still receiving the essential cleaning services.
+                            As a result, the approach saves money and eliminates the risk of hiring a full-time house cleaning.
+                            Most people nowadays tend to overlook the importance of domestic cleanliness because they are
+                            too preoccupied with other priorities such as their careers. Furthermore, people with disabilities are
+                            more likely to require cleaning assistance in order to have a comfortable environment.</p>
                         <div class="row text-center padding-top-mini">
                             <a href="#" class="btn btn-primary">View Details</a>
                             <a href="#" class="btn btn-primary">Purchase Theme</a>
