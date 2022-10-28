@@ -27,9 +27,9 @@
                             Kilau Cleanix Members
                             <span class="line"></span>
                         </p>
-                        <p>Meet our teams</p>
+                        <h4>Meet our teams</h4>
                         <br>
-                        <a href="#" class="btn btn-primary">View Details</a>
+                        {{-- <a href="#" class="btn btn-primary">View Details</a> --}}
                     </div>
                 </div>
                 <div class="col-md-8">
@@ -202,8 +202,8 @@
                             too preoccupied with other priorities such as their careers. Furthermore, people with disabilities are
                             more likely to require cleaning assistance in order to have a comfortable environment.</p>
                         <div class="row text-center padding-top-mini">
-                            <a href="#" class="btn btn-primary">View Details</a>
-                            <a href="#" class="btn btn-primary">Purchase Theme</a>
+                            {{-- <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary">Purchase Theme</a> --}}
                         </div>
                     </div>
                 </div>

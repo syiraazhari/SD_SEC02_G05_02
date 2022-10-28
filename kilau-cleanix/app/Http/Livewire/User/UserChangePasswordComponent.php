@@ -16,32 +16,31 @@ class UserChangePasswordComponent extends Component
     public function updated($fields)
     {
         $this->validateOnly($fields,[
-            'current_password'=>'required',
-            'password'=>'required|min:8|confirmed|different:current_password'        
+            'current_password'=> 'required',
+            'password'=> 'required|min:8|confirmed|different:current_password'
         ]);
     }
-
 
     public function changePassword()
     {
         $this->validate([
-        'current_password'=>'required',
-        'password'=>'required|min:8|confirmed|different:current_password'
-         ]); 
+            'current_password'=> 'required',
+            'password'=> 'required|min:8|confirmed|different:current_password'
+        ]);
 
-         if(Hash::check($this->current_password,Auth::user()->password))
-         {
-           $user = User::findOrFail(Auth::user()->id);
-           $user->password = Hash::make($this->password);
-           $user->save(); 
-           session()->flash('password_sucess','Password has been changed successfully!');
-         }
-         else
-         {
-            session()->flash('password_error','Password does not match!');
-         }
+        if(Hash::check($this->current_password,Auth::user()->password))
+        {
+            $user = User::findOrFail(Auth::user()->id);
+            $user->password = Hash::make($this->password);
+            $user->save();
+            session()->flash('password_success',"Password has been changed successfully!");
+        }
+        else
+        {
+            session()->flash('password_error',"Password does not match!");
+
+        }
     }
-
     public function render()
     {
         return view('livewire.user.user-change-password-component')->layout('layouts.base');

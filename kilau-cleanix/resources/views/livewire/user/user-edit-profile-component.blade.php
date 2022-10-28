@@ -22,16 +22,16 @@
                             <input type="file" class="form-control" wire:model="newimage" >
                         </div>
                         <div class="col-md-8">
-                            <p><b>Name: </b><input type="text" class="form-control" wire:model="name"/></p>
+                            <p><b>Name: </b><input type="text" class="form-control" wire:model="name" required/></p>
                             <p><b>Email: </b>{{$email}}</p>
-                            <p><b>Phone: </b><input type="text" class="form-control" wire:model="mobile"/></p>
+                            <p><b>Phone: </b><input type="text" class="form-control" wire:model="mobile"required/></p>
                             <hr>
-                            <p><b>Line1: </b><input type="text" class="form-control" wire:model="line1"/></p>
-                            <p><b>Line2: </b><input type="text" class="form-control" wire:model="line2"/></p>
-                            <p><b>City: </b><input type="text" class="form-control" wire:model="city"/></p>
-                            <p><b>State: </b><input type="text" class="form-control" wire:model="province"/></p>
-                            <p><b>Country: </b><input type="text" class="form-control" wire:model="country"/></p>
-                            <p><b>Zipcode: </b><input type="text" class="form-control" wire:model="zipcode"/></p>
+                            <p><b>Line1: </b><input type="text" class="form-control" wire:model="line1"required/></p>
+                            <p><b>Line2: </b><input type="text" class="form-control" wire:model="line2"required/></p>
+                            <p><b>City: </b><input type="text" class="form-control" wire:model="city"required/></p>
+                            <p><b>State: </b><input type="text" class="form-control" wire:model="province"required/></p>
+                            <p><b>Country: </b><input type="text" class="form-control" wire:model="country"required/></p>
+                            <p><b>Zipcode: </b><input type="text" class="form-control" wire:model="zipcode"required/></p>
                             <button type="submit" class="btn btn-info pull right">Update</button>
                         </div>
                     </form>
