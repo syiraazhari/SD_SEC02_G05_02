@@ -13,6 +13,7 @@
         </div>
     </div>
 </div>
+<div><body style="background-color:#1C6EA1 ;"></div>
 <section class="content-central">
     <div class="semiboxshadow text-center">
         <img src="assets/img/img-theme/shp.png" class="img-responsive" alt="">
@@ -21,7 +22,7 @@
         <div class="skin_base">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="services-lines-info padding-sides color-white">
+                    <div class="services-lines-info padding-sides color-white"> 
                         <h2>TEAM MEMBERS</h2>
                         <p class="lead">
                             Kilau Cleanix Members
@@ -155,7 +156,7 @@
                     <div class="col-md-6">
                         <div id="single-carousel">
                             <div class="img-hover">
-                                <div class="overlay"> <a href="img/gallery-2/1.jpg" class="fancybox"><i
+                                <div class="overlay"> <a href="img/gallery-2/1.png" class="fancybox"><i
                                             class="fa fa-plus-circle"></i></a></div>
                                 <img src="assets/img/gallery-2/1.jpg" alt="" class="img-responsive">
                             </div>

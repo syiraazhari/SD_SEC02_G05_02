@@ -1,4 +1,5 @@
 <div>
+<div><body style="background-color:#618BD0;"></div>
     <div class="container" style="padding: 30px 0">
         <div class="row">
             <div class="panel panel-default">

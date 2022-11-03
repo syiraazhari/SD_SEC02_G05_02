@@ -58,9 +58,10 @@
         </form>
     </x-jet-authentication-card>
 </x-guest-layout> --}}
+<div><body style="background-color:#CBFCFF;"></div>
 <x-base-layout>
     <div class="section-title-01 honmob">
-        <div class="bg_parallax image_02_parallax"></div>
+        <div class="bg_parallax image_02_parallax"><div><img src="{{ asset('images\register.png')}}" alt="Background"></div></div>
         <div class="opacy_bg_02">
             <div class="container">
                 <h1>Registration</h1>

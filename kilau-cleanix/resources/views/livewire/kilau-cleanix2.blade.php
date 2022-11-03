@@ -19,8 +19,8 @@
         </div>
         <div class="filter-title">
             <div class="title-header">
-                <h2 style="color:#fff;">BOOK A SERVICE</h2>
-                <p class="lead">Book a service at very affordable price, </p>
+                <h2 style="color:#fff;">BOOK A CLEANING SERVICE</h2>
+                <p class="lead">Book a cleaning service at very affordable price. </p>
             </div>
             <div class="filter-header">
                 <form id="sform" action="searchservices" method="post">                        
@@ -31,6 +31,7 @@
             </div>
         </div>
     </section>
+    <div><body style="background-color:#CBFCFF;"></div>
     <section class="content-central">
         <div class="content_info content_resalt">
             <div class="container" style="margin-top: 40px;">
@@ -108,7 +109,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="titles">
-                            <h2>SurfsideMedia <span>Choice</span> of Services</h2>
+                            <h2>KialuCleanix <span>Choice</span> of Services</h2>
                             <i class="fa fa-plane"></i>
                             <hr class="tall">
                         </div>
@@ -118,7 +119,7 @@
                             style="padding-right: 5px;padding-left: 5px;">
                             <a class="g-list" href="service-details/ac-dry-servicing.html">
                                 <div class="img-hover">
-                                    <img src="{{ asset('images/services/thumbnails/thumbnail.jpg')}}" alt="AC Dry Servicing"
+                                    <img src="{{ asset('images\services\1.png')}}" alt="AC Dry Servicing"
                                         class="img-responsive">
                                 </div>
                                 <div class="info-gallery">
@@ -135,7 +136,7 @@
                             style="padding-right: 5px;padding-left: 5px;">
                             <a class="g-list" href="service-details/ac-installation.html">
                                 <div class="img-hover">
-                                    <img src="{{ asset('images/services/thumbmbnail.jpg')}}" alt="AC Installation"
+                                    <img src="{{ asset('images\services\2.png')}}" alt="AC Installation"
                                         class="img-responsive">
                                 </div>
                                 <div class="info-gallery">
@@ -152,7 +153,7 @@
                             style="padding-right: 5px;padding-left: 5px;">
                             <a class="g-list" href="service-details/ac-gas-top-up.html">
                                 <div class="img-hover">
-                                    <img src="{{ asset('images/services/thumbmbnail.jpg')}}" alt="AC Gas Top Up"
+                                    <img src="{{ asset('images\services\3.png')}}" alt="AC Gas Top Up"
                                         class="img-responsive">
                                 </div>
                                 <div class="info-gallery">
@@ -169,7 +170,7 @@
                             style="padding-right: 5px;padding-left: 5px;">
                             <a class="g-list" href="service-details/ac-gas-refill.html">
                                 <div class="img-hover">
-                                    <img src="{{ asset('images/services/thumbmbnail.jpg')}}" alt="AC Gas Refill"
+                                    <img src="{{ asset('images\services\4.png')}}" alt="AC Gas Refill"
                                         class="img-responsive">
                                 </div>
                                 <div class="info-gallery">
@@ -194,11 +195,11 @@
                             <div class="services-lines-info">
                                 <h2>WELCOME TO DIVERSIFIED</h2>
                                 <p class="lead">
-                                    Book best services at one place.
+                                    Book best cleaning services at one place.
                                     <span class="line"></span>
                                 </p>
 
-                                <p>Find a wide variety of home services.</p>
+                                <p>Find a wide variety of home cleaning services.</p>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -207,7 +208,7 @@
                                     <a href="servicesbycategory/1.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969345.png')}}"></i>
                                             <h5>AC</h5>
                                         </div>
                                     </a>
@@ -216,7 +217,7 @@
                                     <a href="servicesbycategory/3.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969409.png')}}"></i>
                                             <h5>Plumbing</h5>
                                         </div>
                                     </a>
@@ -225,7 +226,7 @@
                                     <a href="servicesbycategory/4.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969419.png')}}"></i>
                                             <h5>Electrical</h5>
                                         </div>
                                     </a>
@@ -234,7 +235,7 @@
                                     <a href="servicesbycategory/6.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969446.png')}}"></i>
                                             <h5>Home Cleaning</h5>
                                         </div>
                                     </a>
@@ -243,7 +244,7 @@
                                     <a href="servicesbycategory/8.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969464.png')}}"></i>
                                             <h5>Pest Control</h5>
                                         </div>
                                     </a>
@@ -252,7 +253,7 @@
                                     <a href="servicesbycategory/11.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969512.png')}}"></i>
                                             <h5>Computer Repair</h5>
                                         </div>
                                     </a>
@@ -261,7 +262,7 @@
                                     <a href="servicesbycategory/12.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969522.png')}}"></i>
                                             <h5>TV</h5>
                                         </div>
                                     </a>
@@ -270,7 +271,7 @@
                                     <a href="servicesbycategory/13.html">
                                         <div class="item-service-line">
                                             <i class="fa"><img class="icon-img"
-                                                    src="{{ asset('images/sercat/service')}}"></i>
+                                                    src="{{ asset('images\categories\1521969536.png')}}"></i>
                                             <h5>Refrigerator</h5>
                                         </div>
                                     </a>

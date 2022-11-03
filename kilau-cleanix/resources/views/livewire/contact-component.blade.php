@@ -14,6 +14,7 @@
             </div>
         </div>
     </div>
+    <div><body style="background-color:#CBFCFF;"></div>
     <div class="content-central">
         <div class="semiboxshadow text-center">
             <img src="img/img-theme/shp.png" class="img-responsive" alt="">
