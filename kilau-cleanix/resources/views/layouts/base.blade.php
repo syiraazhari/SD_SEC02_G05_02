@@ -132,6 +132,7 @@
                                         <li><a href="{{route('user.profile')}}">My Profile</a></li>
                                         <li><a href="{{route('admin.service_categories')}}">Service Categories</a></li>
                                         <li><a href="{{route('admin.all_services')}}">All Services</a></li>
+                                        <li><a href="{{route('admin.slider')}}">Manage Slider</a></li>
                                         <li><a href="{{route('user.changepassword')}}">Change Password</a></li> 
                                         <li><a href="{{route('admin.contacts')}}">All Contacts</a></li>                                
                                         <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>

@@ -2,18 +2,14 @@
     <section class="tp-banner-container">
         <div class="tp-banner">
             <ul>
+                @foreach ($slides as $slide)
                 <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000"
                     data-saveperformance="off" data-title="Slide">
-                    <img src="{{ asset('assets/img/slide/1.jpg')}}" alt="fullslide1" data-bgposition="center center"
+                    <img src="{{ asset('images/slider')}}/{{$slide->image}}" alt="{{$slide->title}}" data-bgposition="center center"
                         data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130"
                         data-bgfitend="100" data-bgpositionend="right center">
                 </li>
-                <li data-transition="slidehorizontal" data-slotamount="1" data-masterspeed="1000"
-                    data-saveperformance="off" data-title="Slide">
-                    <img src="{{ asset('assets/img/slide/2.jpg')}}" alt="fullslide1" data-bgposition="top center"
-                        data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130"
-                        data-bgfitend="100" data-bgpositionend="right center" >
-                </li>
+                @endforeach
             </ul>
             <div class="tp-bannertimer"></div>
         </div>
@@ -109,7 +105,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="titles">
-                            <h2>KialuCleanix <span>Choice</span> of Services</h2>
+                            <h2>KilauCleanix <span>Choice</span> of Services</h2>
                             <i class="fa fa-plane"></i>
                             <hr class="tall">
                         </div>

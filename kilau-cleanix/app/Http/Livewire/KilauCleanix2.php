@@ -2,12 +2,14 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Slider;
 use Livewire\Component;
 
 class KilauCleanix2 extends Component
 {
     public function render()
     {
-        return view('livewire.kilau-cleanix2')->layout('layouts.base');
+        $slides = Slider::where('status',1)->get();
+        return view('livewire.kilau-cleanix2',['slides'=>$slides])->layout('layouts.base');
     }
 }

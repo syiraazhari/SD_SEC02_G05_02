@@ -2,11 +2,14 @@
 
 use App\Http\Livewire\AboutUsComponent;
 use App\Http\Livewire\Admin\AdminAddServiceCategoryComponent;
+use App\Http\Livewire\Admin\AdminAddSlideComponent;
 use App\Http\Livewire\Admin\AdminContactComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminEditServiceCategoryComponent;
+use App\Http\Livewire\Admin\AdminEditSlideComponent;
 use App\Http\Livewire\Admin\AdminServiceCategoryComponent;
 use App\Http\Livewire\Admin\AdminServiceComponent;
+use App\Http\Livewire\Admin\AdminSliderComponent;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
 use App\Http\Livewire\KilauCleanix2;
@@ -63,4 +66,8 @@ Route::middleware([
     Route::get('/admin/service-category/edit/{category_id}',AdminEditServiceCategoryComponent::class)->name('admin.edit_service_category');
     Route::get('/admin/all-services',AdminServiceComponent::class)->name('admin.all_services');
     Route::get('/admin/contacts',AdminContactComponent::class)->name('admin.contacts');
+
+    Route::get('/admin/slider',AdminSliderComponent::class)->name('admin.slider');
+    Route::get('/admin/slide/add',AdminAddSlideComponent::class)->name('admin.add_slide');
+    Route::get('/admin/slide/edit/{slide_id}',AdminEditSlideComponent::class)->name('admin.edit_slide');
 });
