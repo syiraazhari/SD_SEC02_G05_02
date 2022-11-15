@@ -14,6 +14,7 @@ use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
 use App\Http\Livewire\KilauCleanix2;
 use App\Http\Livewire\ServiceCategoriesComponent;
+use App\Http\Livewire\ServicesByCategoryComponent;
 use App\Http\Livewire\User\UserChangePasswordComponent;
 use App\Http\Livewire\User\UserEditProfileComponent;
 use App\Http\Livewire\User\UserProfileComponent;
@@ -39,6 +40,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/',KilauCleanix2::class)->name('home');
 Route::get('/service-categories',ServiceCategoriesComponent::class)->name('home.service_categories');
+Route::get('/{category_slug}/services',ServicesByCategoryComponent::class)->name('home.services_by_category');
 Route::get('/contact-us',ContactComponent::class)->name('home.contact');
 Route::get('/about-us',AboutUsComponent::class)->name('home.about_us');
 //For Customer
