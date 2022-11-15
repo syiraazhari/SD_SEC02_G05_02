@@ -3,12 +3,12 @@
             <div class="bg_parallax image_01_parallax"></div>
             <div class="opacy_bg_02">
                 <div class="container">
-                    <h1>{{$category->name}} Services</h1>
+                    <h1>{{$scategory->name}} Services</h1>
                     <div class="crumbs">
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             <li>/</li>
-                            <li>{{$category->name}}</li>
+                            <li>{{$scategory->name}}</li>
                         </ul>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row" style="margin-top: -30px;">
                     <div class="titles">
-                        <h2>{{$category->name}} <span>Services</span></h2>
+                        <h2>{{$scategory->name}} <span>Services</span></h2>
                         <i class="fa fa-plane"></i>
                         <hr class="tall">
                     </div>

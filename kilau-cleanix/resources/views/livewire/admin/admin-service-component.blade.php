@@ -32,10 +32,10 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            All Service Category
+                                            All Service 
                                         </div>
                                         <div class="col-md-6">
-                                            {{-- <a href ="{{route('admin.add_service')}}" class="btn btn-info pull-right">Add New</a> --}}
+                                            <a href ="{{route('admin.add_service')}}" class="btn btn-info pull-right">Add New</a>
                                         </div>
                                     </div>
                                 </div>
