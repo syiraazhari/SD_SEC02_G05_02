@@ -1,7 +1,7 @@
 <div>
     <div class="section-title-01 honmob">
         <div class="bg_parallax image_02_parallax"></div>
-        <div class="opacy_bg_02">
+        <div class="opacy_bg_02" style="background-color:#659DBD">
             <div class="container">
                 <h1>Contact Us</h1>
                 <div class="crumbs">
@@ -14,7 +14,7 @@
             </div>
         </div>
     </div>
-    <div><body style="background-color:#CBFCFF;"></div>
+    <div><body style="background-color:#659DBD;"></div>
     <div class="content-central">
         <div class="semiboxshadow text-center">
             <img src="img/img-theme/shp.png" class="img-responsive" alt="">

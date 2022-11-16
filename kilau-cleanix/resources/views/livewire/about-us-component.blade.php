@@ -1,6 +1,6 @@
 <div class="section-title-01 honmob">
     <div class="bg_parallax image_02_parallax"></div>
-    <div class="opacy_bg_02">
+    <div class="opacy_bg_02" style="background-color:#659DBD">
         <div class="container">
             <h1>About Us</h1>
             <div class="crumbs">
@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<div><body style="background-color:#1C6EA1 ;"></div>
+<div><body style="background-color:#659DBD ;"></div>
 <section class="content-central">
     <div class="semiboxshadow text-center">
         <img src="assets/img/img-theme/shp.png" class="img-responsive" alt="">
@@ -37,7 +37,7 @@
                     <div class="row">
                         <div id="team-carousel-02">
                             <div class="item-team-01">
-                                <img src="assets/img/team/1.jpg" alt="">
+                                <img src="images\aboutus\izmir.jpeg" alt="">
                                 <div class="info-team">
                                     <h4>MOHAMMAD IZZMIR BIN NORZAMANI
                                         <span>Programmer</span>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                             <div class="item-team-01">
-                                <img src="assets/img/team/3.jpg" alt="">
+                                <img src="images\aboutus\rais.jpeg" alt="" >
                                 <div class="info-team">
                                     <h4>MUHAMMAD RAIS IRFAN BIN A.K MOHAMED RAFIQ
                                         <span>Programmer</span>
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                             <div class="item-team-01">
-                                <img src="assets/img/team/2.jpg" alt="">
+                                <img src="images\aboutus\vk.jpeg" alt="">
                                 <div class="info-team">
                                     <h4>VIKING MANSON
                                         <span>Programmer</span>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="item-team-01">
-                                <img src="assets/img/team/3.jpg" alt="">
+                                <img src="images\aboutus\icap.jpeg" alt="">
                                 <div class="info-team">
                                     <h4>MUHAMMAD ISYRAF AHNAF BIN MOHAMAD ZAMRI
                                         <span>Documentation</span>
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="item-team-01">
-                                <img src="assets/img/team/4.jpg" alt="">
+                                <img src="images\aboutus\thia.jpeg" alt="">
                                 <div class="info-team">
                                     <h4>MUHAMMAD THIA THAQIF BIN SHAHRUL AKBAR
                                         <span>Documentation</span>
@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="item-team-01">
-                                <img src="assets/img/team/2.jpg" alt="">
+                                <img src="images\aboutus\yaya.jpeg" alt="">
                                 <div class="info-team">
                                     <h4>WAN NUR FATHIYA BINTI WAN MOHD FAUZI
                                         <span>Documentation</span>

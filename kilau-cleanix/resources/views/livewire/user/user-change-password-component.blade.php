@@ -1,5 +1,5 @@
 <div>
-    <div><body style="background-color:#618BD0;"></div>
+    <div><body style="background-color:#659DBD;"></div>
     <div class="container" style="padding:30px 0;">
         <div class="row">
             <div class="col-md-12"> 
