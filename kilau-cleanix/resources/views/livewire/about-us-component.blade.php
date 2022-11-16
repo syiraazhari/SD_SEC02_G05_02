@@ -42,7 +42,7 @@
                                     <h4>MOHAMMAD IZZMIR BIN NORZAMANI
                                         <span>Programmer</span>
                                     </h4>
-                                    <p>Leader and also a back end programmer.</p>
+                                    <p>Leader and also a Back-End programmer.</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -56,7 +56,7 @@
                                     <h4>MUHAMMAD RAIS IRFAN BIN A.K MOHAMED RAFIQ
                                         <span>Programmer</span>
                                     </h4>
-                                    <p>Back end programmer</p>
+                                    <p>Back-End programmer</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -70,7 +70,7 @@
                                     <h4>VIKING MANSON
                                         <span>Programmer</span>
                                     </h4>
-                                    <p>Front end programmer</p>
+                                    <p>Front-End programmer</p>
                                     <ul class="social-team">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
