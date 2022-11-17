@@ -34,14 +34,14 @@
                         <ul class="visible-xs visible-sm">
                             <li class="text-left"><a href="tel:+60123456789"><i class="fa fa-phone"></i>
                                     +60-1234567890</a></li>
-                            <li class="text-right"><a href="index.php/changelocation.html"><i
+                            <li class="text-right"><a href="#"><i
                                         class="fa fa-map-marker"></i> Cheras, Kuala Lumpur</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6">
                         <ul class="visible-md visible-lg text-right">
                             <li><i class="fa fa-comment"></i> Live Chat</li>
-                            <li><a href="index.php/changelocation.html"><i class="fa fa-map-marker"></i> Cheras,
+                            <li><a href="#"><i class="fa fa-map-marker"></i> Cheras,
                                     Kuala Lumpur</a></li>
                         </ul>
                     </div>

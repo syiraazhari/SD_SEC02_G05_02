@@ -14,6 +14,7 @@ use App\Http\Livewire\Admin\AdminServiceComponent;
 use App\Http\Livewire\Admin\AdminServicesByCategoryComponent;
 use App\Http\Livewire\Admin\AdminSliderComponent;
 use App\Http\Livewire\ContactComponent;
+use App\Http\Livewire\Customer\ConfirmBookingComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
 use App\Http\Livewire\KilauCleanix2;
 use App\Http\Livewire\ServiceCategoriesComponent;
@@ -58,6 +59,7 @@ Route::middleware([
     Route::get('/customer/dashboard',CustomerDashboardComponent::class)->name('customer.dashboard');
     Route::get('/user/profile/edit',UserEditProfileComponent::class)->name('user.editprofile');
     Route::get('/user/change-password',UserChangePasswordComponent::class)->name('user.changepassword');
+    Route::get('/customer/confirm-booking',ConfirmBookingComponent::class)->name('customer.confirmbooking');
 });
 
 

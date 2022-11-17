@@ -85,12 +85,22 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div for="slug" class="control-label col-sm-3">Discount:</div>
+                                            <div for="slug" class="control-label col-sm-3">Discount Type:</div>
                                             <div class="col-sm-9">
                                                 <select class="form-control" wire:model="discount_type">
                                                     <option value="">Select Service Category</option>
                                                     <option value="fixed">Fixed</option>
                                                     <option value="percent">Percent</option>
+                                                </select>
+                                                @error('discount_type') <p class="text-danger">{{$message}}</p>@enderror
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div for="featured" class="control-label col-sm-3">Featured:</div>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" wire:model="featured">
+                                                    <option value="0">No</option>
+                                                    <option value="1">Yes</option>
                                                 </select>
                                                 @error('discount_type') <p class="text-danger">{{$message}}</p>@enderror
                                             </div>

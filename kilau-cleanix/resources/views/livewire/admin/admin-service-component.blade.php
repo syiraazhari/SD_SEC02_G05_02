@@ -52,6 +52,7 @@
                                             <th>Name</th> 
                                             <th>Price</th> 
                                             <th>Status</th>
+                                            <th>Featured</th>
                                             <th>Category</th>
                                             <th>Created At</th>
                                             <th>Edit</th>
@@ -71,9 +72,17 @@
                                                 @else
                                                     Inactive
                                                 @endif
+                                             </td>
+                                             <td>
+                                                @if ($service->featured)
+                                                    Yes
+                                                @else
+                                                    No
+                                                @endif
+                                             </td>
                                              <td>{{$service->category->name}}</td>
                                              <td>{{$service->created_at}}</td>
-                                             </td>
+                                             
                                              <td>
                                                 <a href="{{route('admin.edit_service',['service_slug'=>$service->slug])}}"><button class="btn btn-primary">Edit</button></a>
                                                 

@@ -122,6 +122,7 @@
                             <div class="col-md-12 col-sm-6 col-xs-12 bg-dark color-white padding-top-mini"
                                 style="max-width: 360px">
                                 <a href="{{route('home.service_details',['service_slug'=>$r_service->slug])}}">
+                                    <a href="#">
                                     <div class="img-hover">
                                         <img src="{{asset('images/services/thumbnails')}}/{{$r_service->thumbnail}}" alt="{{$r_service->name}}"
                                             class="img-responsive">

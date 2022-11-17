@@ -52,6 +52,7 @@
                                             <th>Image</th> 
                                             <th>Name</th> 
                                             <th>Slug</th> 
+                                            <th>Featured</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
                                          </tr>
@@ -63,6 +64,12 @@
                                              <td><img src="{{asset('images/categories')}}/{{$scategory->image}}" width="60"/></td>
                                              <td>{{$scategory->name}}</td>
                                              <td>{{$scategory->slug}}</td>
+                                             <td>
+                                            @if ($scategory->featured)
+                                                Yes
+                                            @else
+                                                No                                                
+                                            @endif
                                              <td>
                                                 <a href="{{route('admin.edit_service_category',['category_id'=>$scategory->id])}}"><button class="btn btn-primary">Edit</button></a>
                                                 
