@@ -44,9 +44,6 @@ class AdminAddServiceComponent extends Component
         //    'inclusion'=> 'required',
         //    'exclusion'=> 'required',
         ]);
-        
-        
-
     }
 
     public function createService()

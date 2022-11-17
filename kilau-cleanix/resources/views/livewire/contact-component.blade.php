@@ -19,7 +19,7 @@
         <div class="semiboxshadow text-center">
             <img src="img/img-theme/shp.png" class="img-responsive" alt="">
         </div>
-        <div id="map" class="honmob"> </div>
+        {{-- <div id="map" class="honmob"> </div> --}}
         <div class="content_info">
             <div class="paddings-mini">
                 <div class="container">

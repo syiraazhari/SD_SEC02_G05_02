@@ -38,60 +38,13 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul id="sponsors" class="tooltip-hover">
-                            <li data-toggle="tooltip" title="" data-original-title="AC"> <a
-                                    href="servicesbycategory/1.html"><img src="{{ asset('images\categories\1521969345.png')}}"
-                                        alt="AC"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Beauty"> <a
-                                    href="servicesbycategory/2.html"><img src="{{ asset('images\categories\1521969358.png')}}"
-                                        alt="Beauty"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Plumbing"> <a
-                                    href="servicesbycategory/3.html"><img src="{{ asset('images\categories\1521969409.png')}}"
-                                        alt="Plumbing"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Electrical"> <a
-                                    href="servicesbycategory/4.html"><img src="{{ asset('images\categories\1521969419.png')}}"
-                                        alt="Electrical"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Shower Filter"> <a
-                                    href="servicesbycategory/5.html"><img src="{{ asset('images\categories\1521969430.png')}}"
-                                        alt="Shower Filter"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Home Cleaning"> <a
-                                    href="servicesbycategory/6.html"><img src="{{ asset('images\categories\1521969446.png')}}"
-                                        alt="Home Cleaning"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Carpentry"> <a
-                                    href="servicesbycategory/7.html"><img src="{{ asset('images\categories\1521969454.png')}}"
-                                        alt="Carpentry"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Pest Control"> <a
-                                    href="servicesbycategory/8.html"><img src="{{ asset('images\categories\1521969464.png')}}"
-                                        alt="Pest Control"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Chimney Hob"> <a
-                                    href="servicesbycategory/9.html"><img src="{{ asset('images\categories\1521969490.png')}}"
-                                        alt="Chimney Hob"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Water Purifier"> <a
-                                    href="servicesbycategory/10.html"><img src="{{ asset('images\categories\1521969512.png')}}"
-                                        alt="Water Purifier"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Computer Repair"> <a
-                                    href="servicesbycategory/11.html"><img src="{{ asset('images\categories\1521969522.png')}}"
-                                        alt="Computer Repair"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="TV"> <a
-                                    href="servicesbycategory/12.html"><img src="{{ asset('images\categories\1521969536.png')}}"
-                                        alt="TV"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Refrigerator"> <a
-                                    href="servicesbycategory/13.html"><img src="{{ asset('images\categories\1521969558.png')}}"
-                                        alt="Refrigerator"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Geyser"> <a
-                                    href="servicesbycategory/14.html"><img src="{{ asset('images\categories\1521969576.png')}}"
-                                        alt="Geyser"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Car"> <a
-                                    href="servicesbycategory/15.html"><img src="{{ asset('images\categories\1521969599.png')}}"
-                                        alt="Car"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Document"> <a
-                                    href="servicesbycategory/16.html"><img src="{{ asset('images\categories\1521969622.png')}}"
-                                        alt="Document"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Movers &amp; Packers"> <a
-                                    href="servicesbycategory/17.html"><img src="{{ asset('images\categories\1521972593.png')}}"
-                                        alt="Movers &amp; Packers"></a></li>
-                            <li data-toggle="tooltip" title="" data-original-title="Home Automation"> <a
-                                    href="servicesbycategory/18.html"><img src="{{ asset('images\categories\1521972624.png')}}"
-                                        alt="Home Automation"></a></li>
+                            @foreach ($scategories as $scategory)
+                                <li data-toggle="tooltip" title="" data-original-title="{{$scategory->name}}"> 
+                                    <a href="{{route('home.services_by_category',['category_slug'=>$scategory->slug])}}">
+                                        <img src="{{ asset('images\categories')}}/{{$scategory->image}}" alt="{{$scategory->name}}">
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
@@ -124,7 +77,7 @@
                                     <p>AC Dry Servicing</p>
                                     <div class="content-btn"><a href="service-details/ac-dry-servicing.html"
                                             class="btn btn-primary">Book Now</a></div>
-                                    <div class="price"><span>&#36;</span><b>From</b>300</div>
+                                    <div class="price"><span>RM</span><b>From</b>300</div>
                                 </div>
                             </a>
                         </div>
@@ -141,7 +94,7 @@
                                     <p>AC Installation</p>
                                     <div class="content-btn"><a href="service-details/ac-installation.html"
                                             class="btn btn-primary">Book Now</a></div>
-                                    <div class="price"><span>&#36;</span><b>From</b>320</div>
+                                    <div class="price"><span>RM</span><b>From</b>320</div>
                                 </div>
                             </a>
                         </div>
@@ -158,7 +111,7 @@
                                     <p>AC Gas Top Up</p>
                                     <div class="content-btn"><a href="service-details/ac-gas-top-up.html"
                                             class="btn btn-primary">Book Now</a></div>
-                                    <div class="price"><span>&#36;</span><b>From</b>320</div>
+                                    <div class="price"><span>RM</span><b>From</b>320</div>
                                 </div>
                             </a>
                         </div>
@@ -175,7 +128,7 @@
                                     <p>AC Gas Refill</p>
                                     <div class="content-btn"><a href="service-details/ac-gas-refill.html"
                                             class="btn btn-primary">Book Now</a></div>
-                                    <div class="price"><span>&#36;</span><b>From</b>510</div>
+                                    <div class="price"><span>RM</span><b>From</b>510</div>
                                 </div>
                             </a>
                         </div>
@@ -301,7 +254,7 @@
                             <p>AC Wet Servicing</p>
                             <div class="content-btn"><a href="service-details/ac-wet-servicing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>200</div>
+                            <div class="price"><span>RM</span><b>From</b>200</div>
                         </div>
                     </a>
                 </div>
@@ -317,7 +270,7 @@
                             <p>Bedroom Deep Cleaning</p>
                             <div class="content-btn"><a href="service-details/bedroom-deep-cleaning.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>300</div>
+                            <div class="price"><span>RM</span><b>From</b>300</div>
                         </div>
                     </a>
                 </div>
@@ -333,7 +286,7 @@
                             <p>Dining Chair Shampooing</p>
                             <div class="content-btn"><a href="service-details/dining-chair-shampooing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>400</div>
+                            <div class="price"><span>RM</span><b>From</b>400</div>
                         </div>
                     </a>
                 </div>
@@ -349,7 +302,7 @@
                             <p>Carpet Shampooing</p>
                             <div class="content-btn"><a href="service-details/carpet-shampooing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>200</div>
+                            <div class="price"><span>RM</span><b>From</b>200</div>
                         </div>
                     </a>
                 </div>
@@ -365,7 +318,7 @@
                             <p>Fabric Sofa Shampooing</p>
                             <div class="content-btn"><a href="service-details/fabric-sofa-shampooing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>211</div>
+                            <div class="price"><span>RM</span><b>From</b>211</div>
                         </div>
                     </a>
                 </div>
@@ -381,7 +334,7 @@
                             <p>Bathroom Deep Cleaning</p>
                             <div class="content-btn"><a href="service-details/bathroom-deep-cleaning.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>233</div>
+                            <div class="price"><span>RM</span><b>From</b>233</div>
                         </div>
                     </a>
                 </div>
@@ -397,7 +350,7 @@
                             <p>Floor Scrubbing &amp; Polishing</p>
                             <div class="content-btn"><a href="service-details/floor-scrubbing-polishing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>411</div>
+                            <div class="price"><span>RM</span><b>From</b>411</div>
                         </div>
                     </a>
                 </div>
@@ -413,7 +366,7 @@
                             <p>Mattress Shampooing</p>
                             <div class="content-btn"><a href="service-details/mattress-shampooing.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>222</div>
+                            <div class="price"><span>RM</span><b>From</b>222</div>
                         </div>
                     </a>
                 </div>
@@ -429,7 +382,7 @@
                             <p>Kitchen Deep Cleaning</p>
                             <div class="content-btn"><a href="service-details/kitchen-deep-cleaning.html"
                                     class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>&#36;</span><b>From</b>111</div>
+                            <div class="price"><span>RM</span><b>From</b>111</div>
                         </div>
                     </a>
                 </div>

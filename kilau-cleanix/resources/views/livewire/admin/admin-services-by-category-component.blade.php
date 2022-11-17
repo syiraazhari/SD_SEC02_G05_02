@@ -41,7 +41,7 @@
                                 <p>{{$service->tagline}}</p>
                                 <div class="content-btn"><a href="service-details/ac-wet-servicing.html"
                                         class="btn btn-primary">Book Now</a></div>
-                                <div class="price"><span>&#36;</span><b>From</b>{{$service->price}}</div>
+                                <div class="price"><span>RM</span><b>From</b>{{$service->price}}</div>
                             </div>
                         </a>
                     </div>

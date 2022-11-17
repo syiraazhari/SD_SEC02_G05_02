@@ -54,6 +54,7 @@
                                             <th>Status</th>
                                             <th>Category</th>
                                             <th>Created At</th>
+                                            <th>Edit</th>
                                             <th>Delete</th>
                                          </tr>
                                     </thead>
@@ -74,11 +75,11 @@
                                              <td>{{$service->created_at}}</td>
                                              </td>
                                              <td>
-                                                <a href="#"><button class="btn btn-primary">Edit</button></a>
+                                                <a href="{{route('admin.edit_service',['service_slug'=>$service->slug])}}"><button class="btn btn-primary">Edit</button></a>
                                                 
                                             </td>
                                             <td>
-                                                <a href="#" style="margin-left:10px;"><i class="fa fa-times fa-2x text-danger"></i></a> 
+                                                <a href="#" onclick="confirm('Are you sure you want to delete this service?') || event.stopImmediatePropagation()" wire:click.prevent="deleteService({{$service->id}})" style="margin-left:10px;"><i class="fa fa-times fa-2x text-danger"></i></a> 
                                             </td>	
                                          </tr>
                                      @endforeach
