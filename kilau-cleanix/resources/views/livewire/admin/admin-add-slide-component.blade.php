@@ -1,7 +1,7 @@
 <div>
     <div class="section-title-01 honmob">
-        <div class="bg_parallax image_02_parallax"></div>
-        <div class="opacy_bg_02" style="background-color:#659DBD">
+        <div class="bg_parallax image_02_parallax"><div><img src="{{ asset('images\slider\anc.JPG')}}" alt="Background"></div></div>
+        <div class="opacy_bg_02">
             <div class="container">
                 <h1>Add Slide</h1>
                 <div class="crumbs">

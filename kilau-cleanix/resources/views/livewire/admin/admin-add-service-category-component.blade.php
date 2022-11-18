@@ -1,6 +1,6 @@
 <div>
     <div class="section-title-01 honmob">
-        <div class="bg_parallax image_02_parallax"><div><img src="{{ asset('images\slidebackg\pic4.jpg')}}" alt="Background"></div></div>
+        <div class="bg_parallax image_02_parallax"><div><img src="{{ asset('images\sercatg.jpg')}}" alt="Background"></div></div>
         <div class="opacy_bg_02">
             <div class="container">
                 <h1>Add Service Category</h1>
