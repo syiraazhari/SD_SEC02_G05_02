@@ -66,7 +66,6 @@ class AdminEditServiceComponent extends Component
            'tagline'=> 'required',
            'service_category_id'=> 'required',
            'price'=> 'required',
-           
            'description'=> 'required',
            'link'=> 'required',
         //    'inclusion'=> 'required',

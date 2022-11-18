@@ -6,6 +6,7 @@ use App\Http\Livewire\Admin\AdminAddServiceComponent;
 use App\Http\Livewire\Admin\AdminAddSlideComponent;
 use App\Http\Livewire\Admin\AdminContactComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Admin\AdminEditBooking;
 use App\Http\Livewire\Admin\AdminEditServiceCategoryComponent;
 use App\Http\Livewire\Admin\AdminEditServiceComponent;
 use App\Http\Livewire\Admin\AdminEditSlideComponent;
@@ -80,6 +81,7 @@ Route::middleware([
     Route::get('/admin/{category_slug}/services',AdminServicesByCategoryComponent::class)->name('admin.services_by_category');
     Route::get('/admin/contacts',AdminContactComponent::class)->name('admin.contacts');
     Route::get('/admin/booking-history',AdminViewOrderHistory::class)->name('admin.booking_history');
+    Route::get('/admin/booking/edit/{booking_id}',AdminEditBooking::class)->name('admin.edit_booking');
 
     Route::get('/admin/slider',AdminSliderComponent::class)->name('admin.slider');
     Route::get('/admin/slide/add',AdminAddSlideComponent::class)->name('admin.add_slide');

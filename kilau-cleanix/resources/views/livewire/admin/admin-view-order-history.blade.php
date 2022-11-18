@@ -48,8 +48,8 @@
                                     <thead>
                                          <tr>
                                             <th>#</th> 
-                                            <th>Service ID</th> 
-                                            <th>User ID</th> 
+                                            <th>ServiceID</th> 
+                                            <th>UserID</th> 
                                             <th>Phone Number</th> 
                                             <th>Address ln 1</th>
                                             <th>Address ln 2</th>
@@ -58,6 +58,8 @@
                                             <th>Country</th>
                                             <th>Zipcode</th>
                                             <th>Time / Date</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
                                          </tr>
                                     </thead>
                                     <tbody>
@@ -74,7 +76,12 @@
                                             <td>{{$booking->country}}</td>
                                             <td>{{$booking->zipcode}}</td>
                                             <td>{{$booking->time}} / {{$booking->date}}</td>
-                                            
+                                            <td>
+                                                <a href="{{route('admin.edit_booking',['booking_id'=>$booking->id])}}"><button class="btn btn-primary">Edit</button></a>
+                                            </td>
+                                            <td>
+                                                <a href="#" onclick="confirm('Are you sure you want to delete this category?') || event.stopImmediatePropagation()" wire:click.prevent="deleteOrderHistory({{$booking->id}})" style="margin-left:10px;"><i class="fa fa-times fa-2x text-danger"></i></a> 
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>

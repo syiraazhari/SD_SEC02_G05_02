@@ -2,7 +2,7 @@
     <div><body style="background-color:#659DBD;"></div>
         <div class="container" style="padding: 30px 0">
             <div class="row">
-                <form wire:submit.prevent="bookForm">
+                <form wire:submit.prevent="updateBookForm">
                 <div class="panel panel-default">
                     <div class="panel panel-heading">
                         Confirm Booking Details
@@ -29,44 +29,6 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">Payment Breakdown</div>
-                    <div class="panel-body">
-                        <table class="table">
-                            <tr>
-                                <td style="border-top: none;">Price</td>
-                                <td style="border-top: none;"><span>RM</span> {{$service->price}}</td>
-                            </tr>
-                            <tr>
-                                <td>Quantity</td>
-                                <td>1</td>
-                            </tr>
-                            @php
-                                $total = $service->price;
-                            @endphp
-                            @if ($service->discount) 
-                                @if ($service->discount_type=='fixed')
-                                <tr>
-                                    <td>Discount</td>
-                                    <td>{{$service->discount}}</td>
-                                </tr>
-                                @php $total = $total-$service->discount; @endphp                                           
-                                
-                                @elseif($service->discount_type=='percent')
-                                <tr>
-                                    <td>Discount</td>
-                                    <td>{{$service->discount}}</td>
-                                    @php $total = $total-($total*$service->discount/100); @endphp
-                                </tr>
-                                
-                                @endif                                          
-                                
-                            @endif
-                            <tr>
-                                <td>Total</td>
-                                <td><span>RM</span> {{$total}}</td>
-                            </tr>
-                        </table>
-                    </div>
                     <div class="panel-footer">
                         {{-- <form>                                                
                             <input type="submit" class="btn btn-primary" name="submit"
@@ -75,7 +37,7 @@
                                     class="btn btn-primary">PAY NOW</a>
                                 </div>
                         </form> --}}
-                        <button name="confirmbooking" type="submit" class="btn btn-info pull right">Proceed</button>
+                        <button name="confirmbooking" type="submit" class="btn btn-info pull right">UPDATE</button>
                         {{-- <button name="paynowbtn" type="submit" class="btn btn-info pull right" href="{{$service->link}}">Pay Now</button> --}}
                     </div>
                 </form>

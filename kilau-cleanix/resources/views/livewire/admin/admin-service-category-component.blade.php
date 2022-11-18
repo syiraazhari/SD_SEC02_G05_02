@@ -70,9 +70,8 @@
                                             @else
                                                 No                                                
                                             @endif
-                                             <td>
+                                            <td>
                                                 <a href="{{route('admin.edit_service_category',['category_id'=>$scategory->id])}}"><button class="btn btn-primary">Edit</button></a>
-                                                
                                             </td>
                                             <td>
                                                 <a href="#" onclick="confirm('Are you sure you want to delete this category?') || event.stopImmediatePropagation()" wire:click.prevent="deleteServiceCategory({{$scategory->id}})" style="margin-left:10px;"><i class="fa fa-times fa-2x text-danger"></i></a> 

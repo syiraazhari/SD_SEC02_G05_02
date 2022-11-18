@@ -7,6 +7,12 @@ use Livewire\Component;
 
 class AdminViewOrderHistory extends Component
 {
+    public function deleteOrderHistory($id)
+    {
+        $bookings = Booking::find($id);
+        $bookings->delete();
+        session()->flash('message','Order History has been deleted successfully!');
+    }
     public function render()
     {
         $bookings = Booking::paginate(15);
