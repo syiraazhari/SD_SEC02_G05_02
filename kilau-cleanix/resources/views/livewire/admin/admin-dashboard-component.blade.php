@@ -44,9 +44,12 @@
                                             <a href ="{{route('admin.booking_history')}}" class="btn btn-info pull-right" >All Bookings</a> 
                                         </div>
                                         
-                                        <!-- <div class="col-md-6">
-                                            <a href ="{{route('admin.add_service')}}" class="btn btn-info pull-right">Add New</a>
-                                        </div> -->
+                                         <div class="col-md-2">
+                                            <a href ="{{route('admin.add_service')}}" class="btn btn-info pull-right">Add New Services</a>
+                                        </div> 
+                                        <div class="col-md-2">
+                                            <a href ="{{route('admin.slider')}}" class="btn btn-info pull-right">Manage Slider</a>
+                                        </div> 
                                     </div>
                                 </div>
                             </div>

@@ -32,10 +32,19 @@
                                 <div class="panel-heading">
                                     <div class="row" >
                                         <div class="col-md-2">
-                                            <a href ="{{route('user.profile')}}"  class="btn btn-info pull-right">My Profile</a> 
+                                            <a href ="{{route('user.profile')}}"  class="btn btn-info ">My Profile</a> 
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href ="{{route('user.editprofile')}}" class="btn btn-info " >Edit Profile</a> 
                                         </div>
                                         <div class="col-md-2">
                                             <a href ="{{route('user.changepassword')}}" class="btn btn-info pull-right" >Change Password</a> 
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href ="{{route('home.service_categories')}}" class="btn btn-info pull-right" >Service List</a> 
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href ="{{route('home.contact')}}" class="btn btn-info pull-right" >Contact Us</a> 
                                         </div>
                                         
                                         
