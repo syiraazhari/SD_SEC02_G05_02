@@ -1,6 +1,6 @@
 <div>
 <div class="section-title-01 honmob">
-            <div class="bg_parallax image_01_parallax"></div>
+            <div class="bg_parallax image_01_parallax"><div><img src="{{ asset('images\slidebackg\service1.JPG')}}" alt="Background"></div></div>
             <div class="opacy_bg_02">
                 <div class="container">
                     <h1>{{$scategory->name}} Services</h1>

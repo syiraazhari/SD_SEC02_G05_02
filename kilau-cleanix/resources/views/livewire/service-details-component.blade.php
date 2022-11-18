@@ -1,5 +1,5 @@
 <div class="section-title-01 honmob">
-    <div class="bg_parallax image_01_parallax"></div>
+    <div class="bg_parallax image_01_parallax"><div><img src="{{ asset('images\slidebackg\pay.jpg')}}" alt="Background"></div></div>
     <div class="opacy_bg_02">
         <div class="container">
             <h1>{{$service->name}}</h1>
