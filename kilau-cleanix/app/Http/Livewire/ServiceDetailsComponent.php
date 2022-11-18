@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Service;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceDetailsComponent extends Component
 {
@@ -14,6 +15,7 @@ class ServiceDetailsComponent extends Component
     {
         $this->service_slug = $service_slug;
     }
+
     public function render()
     {
         $service = Service::where('slug',$this->service_slug)->first();

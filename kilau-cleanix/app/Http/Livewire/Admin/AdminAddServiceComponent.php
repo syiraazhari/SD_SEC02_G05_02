@@ -22,6 +22,7 @@ class AdminAddServiceComponent extends Component
     public $image;
     public $thumbnail;
     public $description;
+    public $link;
     public $inclusion;
     public $exclusion;
 
@@ -41,6 +42,7 @@ class AdminAddServiceComponent extends Component
            'image'=> 'required|mimes:jpeg,png',
            'thumbnail'=> 'required|mimes:jpeg,png',
            'description'=> 'required',
+           'link'=>'required'
         //    'inclusion'=> 'required',
         //    'exclusion'=> 'required',
         ]);
@@ -57,6 +59,7 @@ class AdminAddServiceComponent extends Component
            'image'=> 'required|mimes:jpeg,png',
            'thumbnail'=> 'required|mimes:jpeg,png',
            'description'=> 'required',
+           'link'=>'required'
         //    'inclusion'=> 'required',
         //    'exclusion'=> 'required',
         ]);
@@ -69,6 +72,7 @@ class AdminAddServiceComponent extends Component
         $service->discount = $this->discount;
         $service->discount_type = $this->discount_type;
         $service->description = $this->description;
+        $service->link = $this->link;
         $service->inclusion = str_replace("\n",'|',trim($this->inclusion));
         $service->exclusion = str_replace("\n",'|',trim($this->exclusion));
 

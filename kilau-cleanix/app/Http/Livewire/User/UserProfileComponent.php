@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\User;
 
+use App\Models\Booking;
 use App\Models\Profile;
 use App\Models\User;
 use Illuminate\Contracts\Auth\UserProvider;

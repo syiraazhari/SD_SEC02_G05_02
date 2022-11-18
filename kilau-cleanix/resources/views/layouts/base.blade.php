@@ -134,7 +134,8 @@
                                         <li><a href="{{route('admin.all_services')}}">All Services</a></li>
                                         <li><a href="{{route('admin.slider')}}">Manage Slider</a></li>
                                         <li><a href="{{route('user.changepassword')}}">Change Password</a></li> 
-                                        <li><a href="{{route('admin.contacts')}}">All Contacts</a></li>                                
+                                        <li><a href="{{route('admin.contacts')}}">All Contacts</a></li> 
+                                        <li><a href="{{route('admin.booking_history')}}">All Bookings</a></li>                                
                                         <li><a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
                                     </ul>
                                 </li>
@@ -208,7 +209,7 @@
                         <h3>CONTACT US</h3>
                         <ul class="contact_footer">
                             <li class="location">
-                                <i class="fa fa-map-marker"></i> <a href="#"> Cheras, Kuala Lumpur, India</a>
+                                <i class="fa fa-map-marker"></i> <a href="#"> Cheras, Kuala Lumpur</a>
                             </li>
                             <li>
                                 <i class="fa fa-envelope"></i> <a

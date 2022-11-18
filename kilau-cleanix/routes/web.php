@@ -13,6 +13,7 @@ use App\Http\Livewire\Admin\AdminServiceCategoryComponent;
 use App\Http\Livewire\Admin\AdminServiceComponent;
 use App\Http\Livewire\Admin\AdminServicesByCategoryComponent;
 use App\Http\Livewire\Admin\AdminSliderComponent;
+use App\Http\Livewire\Admin\AdminViewOrderHistory;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Customer\ConfirmBookingComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
@@ -59,7 +60,7 @@ Route::middleware([
     Route::get('/customer/dashboard',CustomerDashboardComponent::class)->name('customer.dashboard');
     Route::get('/user/profile/edit',UserEditProfileComponent::class)->name('user.editprofile');
     Route::get('/user/change-password',UserChangePasswordComponent::class)->name('user.changepassword');
-    Route::get('/customer/confirm-booking',ConfirmBookingComponent::class)->name('customer.confirmbooking');
+    Route::get('/customer/confirm-booking/{service_slug}',ConfirmBookingComponent::class)->name('customer.confirm_booking');
 });
 
 
@@ -78,6 +79,7 @@ Route::middleware([
     Route::get('/admin/all-services',AdminServiceComponent::class)->name('admin.all_services');
     Route::get('/admin/{category_slug}/services',AdminServicesByCategoryComponent::class)->name('admin.services_by_category');
     Route::get('/admin/contacts',AdminContactComponent::class)->name('admin.contacts');
+    Route::get('/admin/booking-history',AdminViewOrderHistory::class)->name('admin.booking_history');
 
     Route::get('/admin/slider',AdminSliderComponent::class)->name('admin.slider');
     Route::get('/admin/slide/add',AdminAddSlideComponent::class)->name('admin.add_slide');

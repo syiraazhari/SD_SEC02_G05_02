@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('book_id')->unsigned();
             $table->string('image')->nullable();
             $table->string('mobile')->nullable();
             $table->string('line1')->nullable();
@@ -26,6 +27,7 @@ return new class extends Migration
             $table->string('zipcode')->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('book_id')->references('id')->on('bookings')->onDelete('cascade');
         });
     }
 

@@ -125,31 +125,59 @@
             <div class="container">
                 <div class="row">
                     <div class="titles">
-                        <h2><span>Appliance</span>Services</h2>
+                        <h2><span>About us</span></h2>
                         <i class="fa fa-wrench"></i>
                         <hr class="tall">
                     </div>
                 </div>
             </div>
             <div id="boxes-carousel">
-                @foreach ($aservices as $aservice )
-                <div>
-                    <a class="g-list" href="{{route('home.service_details',['service_slug'=>$aservice->slug])}}">
-                        <div class="img-hover">
-                            <img src="{{ asset('images/services/thumbnails')}}/{{$aservice->thumbnail}}" alt="{{$aservice->name}}" class="img-responsive">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3></h3>
+                        <p>This website provides professional cleaning services to
+                            customers in the Kuala Lumpur area. Customers may simply arrange an appointment for a cleaning
+                            service that meets all of their requirements through our website. Cleanliness is vital for maintaining
+                            a positive environment.</p>
+                        <h3>Our Speciality</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-styles">
+                                    <li><i class="fa fa-check"></i> <a href="#">Ease Of Use</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">First Class Cleaning</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">Inclusive Cleaning Packages</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-styles">
+                                    <li><i class="fa fa-check"></i> <a href="#">Best Price Guarantee</a></li>
+                                    <li><i class="fa fa-check"></i> <a href="#">Great Support Staff</a></li>
+                                </ul>
+                            </div>
                         </div>
-
-                        <div class="info-gallery">
-                            <h3>{{$aservices->name}}</h3>
-                            <hr class="separator">
-                            <p>{{$aservices->tagline}}</p>
-                            <div class="content-btn"><a href="{{route('home.service_details',['service_slug'=>$aservice->slug])}}"
-                                    class="btn btn-primary">Book Now</a></div>
-                            <div class="price"><span>RM</span><b>From</b>{{$aservices->price}}</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="single-carousel">
+                            <div class="img-hover">
+                                <div class="overlay"> <a href="img/gallery-2/1.png" class="fancybox"><i
+                                            class="fa fa-plus-circle"></i></a></div>
+                                <img src="assets/img/gallery-2/1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="img-hover">
+                                <div class="overlay"> <a href="img/gallery-2/2.jpg" class="fancybox"><i
+                                            class="fa fa-plus-circle"></i></a></div>
+                                <img src="assets/img/gallery-2/2.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="img-hover">
+                                <div class="overlay"> <a href="img/gallery-2/3.jpg" class="fancybox"><i
+                                            class="fa fa-plus-circle"></i></a></div>
+                                <img src="assets/img/gallery-2/3.jpg" alt="" class="img-responsive">
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                @endforeach
+            </div>
             </div>
         </div>
     </section>

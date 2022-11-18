@@ -23,6 +23,7 @@ class AdminEditServiceComponent extends Component
     public $image;
     public $thumbnail;
     public $description;
+    public $link;
     public $inclusion;
     public $exclusion;
 
@@ -35,7 +36,7 @@ class AdminEditServiceComponent extends Component
     public function mount($service_slug)
     {
         $service = Service::where('slug',$service_slug)->first();
-    $this-> service_id = $service->id;
+        $this-> service_id = $service->id;
         $this->name = $service->name;
         $this->slug = $service->slug;
         $this->tagline = $service->tagline;
@@ -46,6 +47,7 @@ class AdminEditServiceComponent extends Component
         $this->image = $service->image;
         $this->thumbnail = $service->thumbnail;
         $this->description = $service->description;
+        $this->link = $service->link;
         $this->featured = $service->featured;
         $this->inclusion = str_replace("\n",'|',trim($this->inclusion));
         $this->exclusion = str_replace("\n",'|',trim($this->exclusion));
@@ -66,6 +68,7 @@ class AdminEditServiceComponent extends Component
            'price'=> 'required',
            
            'description'=> 'required',
+           'link'=> 'required',
         //    'inclusion'=> 'required',
         //    'exclusion'=> 'required',
         ]);
@@ -92,6 +95,7 @@ class AdminEditServiceComponent extends Component
             'service_category_id'=> 'required',
             'price'=> 'required',
             'description'=> 'required',
+            'link'=>'required'
          //    'inclusion'=> 'required',
          //    'exclusion'=> 'required',
          ]);
@@ -119,6 +123,7 @@ class AdminEditServiceComponent extends Component
          $service->discount_type = $this->discount_type;
          $service->featured = $this->featured;
          $service->description = $this->description;
+         $service->link = $this->link;
          $service->inclusion = str_replace("\n",'|',trim($this->inclusion));
          $service->exclusion = str_replace("\n",'|',trim($this->exclusion));
         

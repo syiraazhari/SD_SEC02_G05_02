@@ -78,7 +78,7 @@
                                             <td style="border-top: none;"><span>RM</span> {{$service->price}}</td>
                                         </tr>
                                         <tr>
-                                            <td>Quntity</td>
+                                            <td>Quantity</td>
                                             <td>1</td>
                                         </tr>
                                         @php
@@ -110,8 +110,11 @@
                                 </div>
                                 <div class="panel-footer">
                                     <form>                                                
-                                        <input type="submit" class="btn btn-primary" name="submit"
-                                            value=" Book Now">
+                                        {{-- <input type="submit" class="btn btn-primary" name="submit"
+                                            value=" Book Now"> --}}
+                                            <div class="content-btn"><a href="{{route('customer.confirm_booking',['service_slug'=>$service->slug])}}"
+                                                class="btn btn-primary">Book Now</a>
+                                            </div>
                                     </form>
                                 </div>
                             </div>

@@ -113,6 +113,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
+                                            <div for="slug" class="control-label col-sm-3">Product Link:</div>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" name="link"wire:model="link"/>
+                                                @error('link') <p class="text-danger">{{$message}}</p>@enderror
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <div for="slug" class="control-label col-sm-3">Inclusion:</div>
                                             <div class="col-sm-9">
                                                 <textarea class="form-control" wire:model="inclusion"></textarea>
