@@ -87,7 +87,7 @@
                                     </tbody>
                                 </table> 
                                 <h5 style="color: grey">Detailed data can be referred through collected data in database</h5>
-                                {{$bookings->links()}}   
+                                {{-- {{$bookings->links()}}    --}}
                             </div>
                         </div>
                     </div>

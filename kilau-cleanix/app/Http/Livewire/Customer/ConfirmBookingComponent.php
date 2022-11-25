@@ -40,7 +40,6 @@ class ConfirmBookingComponent extends Component
         $this->service_slug = $service_slug;
         $user = User::find(Auth::user()->id);
         $service = Service::where('slug',$service_slug)->first();
-        $service_link = $service->link;
         $this->service_id = $service->id;
         $this->name =$user->name;
         $this->email =$user->email;

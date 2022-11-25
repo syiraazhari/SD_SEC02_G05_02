@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2022 at 10:31 PM
+-- Generation Time: Nov 18, 2022 at 04:32 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -30,7 +30,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `bookings` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `service_id` bigint(20) UNSIGNED DEFAULT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `time` time NOT NULL,
+  `date` date NOT NULL,
+  `user_id` bigint(20) UNSIGNED DEFAULT NULL,
   `mobile` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `line1` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `line2` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -46,11 +48,14 @@ CREATE TABLE `bookings` (
 -- Dumping data for table `bookings`
 --
 
-INSERT INTO `bookings` (`id`, `service_id`, `image`, `mobile`, `line1`, `line2`, `city`, `province`, `country`, `zipcode`, `created_at`, `updated_at`) VALUES
-(1, 4, NULL, '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 10:26:49', '2022-11-17 10:26:49'),
-(2, 6, NULL, '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 13:17:54', '2022-11-17 13:17:54'),
-(3, 6, NULL, '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 13:24:30', '2022-11-17 13:24:30'),
-(4, 6, NULL, '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 13:25:17', '2022-11-17 13:25:17');
+INSERT INTO `bookings` (`id`, `service_id`, `time`, `date`, `user_id`, `mobile`, `line1`, `line2`, `city`, `province`, `country`, `zipcode`, `created_at`, `updated_at`) VALUES
+(37, 4, '15:00:00', '2022-11-26', 1, '01156252506', '18, Jalan Seri Taming 4', 'Taman Seri Taming', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 18:51:37', '2022-11-17 22:23:50'),
+(38, 4, '13:00:00', '2022-11-30', 1, '01156252506', '18, Jalan Seri Taming 4', 'Taman Seri Taming', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 18:57:12', '2022-11-17 18:57:12'),
+(40, 4, '23:40:00', '2022-11-19', 1, '01156252506', '18, Jalan Seri Taming 4', 'ngfhgshdcg', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-18 04:37:44', '2022-11-18 04:37:44'),
+(41, 4, '20:45:00', '2022-11-19', 3, '1234567890', 'sdsasdvd', 'SDSAASVFDSAa', 'sdffdsas', 'asdfdsaa', 'asdfda', '1234', '2022-11-18 04:43:35', '2022-11-18 04:43:35'),
+(43, 3, '09:00:00', '2022-11-20', 2, '0134452765', 'Jalan 49', 'Perumahan Rantau Laut', 'Kemaman', 'Terengganu', 'Malaysia', '24300', '2022-11-18 06:51:16', '2022-11-18 06:51:16'),
+(44, 3, '09:00:00', '2022-11-20', 2, '0134452765', 'Jalan 49', 'Perumahan Rantau Laut', 'Kemaman', 'Terengganu', 'Malaysia', '24300', '2022-11-18 06:52:03', '2022-11-18 06:52:03'),
+(45, 3, '09:00:00', '2022-11-20', 2, '0134452765', 'Jalan 49', 'Perumahan Rantau Laut', 'Kemaman', 'Terengganu', 'Malaysia', '24300', '2022-11-18 06:52:32', '2022-11-18 06:52:32');
 
 -- --------------------------------------------------------
 
@@ -174,7 +179,9 @@ CREATE TABLE `profiles` (
 --
 
 INSERT INTO `profiles` (`id`, `user_id`, `image`, `mobile`, `line1`, `line2`, `city`, `province`, `country`, `zipcode`, `created_at`, `updated_at`) VALUES
-(1, 1, NULL, '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 09:28:51', '2022-11-17 10:25:22');
+(1, 1, '1668722743.jpg', '01156252506', '18, Jalan Seri Taming 4', 'Test', 'Cheras', 'Selangor', 'Malaysia', '43200', '2022-11-17 09:28:51', '2022-11-17 14:05:43'),
+(2, 3, NULL, '1234567890', 'sdsasdvd', 'SDSAASVFDSAa', 'sdffdsas', 'asdfdsaa', 'asdfda', '1234', '2022-11-18 04:42:27', '2022-11-18 04:43:08'),
+(3, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2022-11-18 05:36:31', '2022-11-18 05:36:31');
 
 -- --------------------------------------------------------
 
@@ -194,6 +201,7 @@ CREATE TABLE `services` (
   `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `thumbnail` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `link` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `inclusion` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `exclusion` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 1,
@@ -206,12 +214,13 @@ CREATE TABLE `services` (
 -- Dumping data for table `services`
 --
 
-INSERT INTO `services` (`id`, `name`, `slug`, `tagline`, `service_category_id`, `price`, `discount`, `discount_type`, `image`, `thumbnail`, `description`, `inclusion`, `exclusion`, `status`, `created_at`, `updated_at`, `featured`) VALUES
-(1, 'Air Conditioner Cleaning', 'air-conditioner-cleaning', 'Air Conditioner Cleaning', 1, '150.00', NULL, NULL, 'service_4.jpg', 'service_4.jpg', 'Air Conditioner Deep Cleaning', '', '', 1, '2022-11-15 11:47:39', '2022-11-16 18:41:27', 1),
-(3, 'Air Conditioner Maintenance', 'air-conditioner-maintenance', 'Air Conditioner Maintenance', 1, '75.00', NULL, NULL, 'service_3.jpg', 'service_3.jpg', 'Genarel Aircond Maintenance', 'Gas Refill | Get Rid Of Dust Bunnies', '', 1, '2022-11-15 11:47:39', '2022-11-16 19:15:02', 1),
-(4, 'Gas topup', 'gas-topup', 'Gas Topup', 1, '120.00', '10.00', 'percent', '1668526382.jpg', '1668604851.jpg', 'testing new service function', '', '', 1, '2022-11-15 07:33:02', '2022-11-16 20:15:08', 1),
-(6, 'Plumbing', 'plumbing', 'Clogged pipe? Call us now!', 8, '75.00', '10.00', 'fixed', '1668652104.jpg', '1668652104.jpg', 'Clogged pipe? Call us now!', '', '', 1, '2022-11-16 18:28:24', '2022-11-16 20:15:19', 1),
-(7, 'AC', 'ac', 'AC Maintenance', 3, '100.00', '1.00', 'fixed', '1668671140.jpg', '1668671140.jpg', 'AC Maintenance', '', '', 1, '2022-11-16 23:45:40', '2022-11-16 23:45:40', 0);
+INSERT INTO `services` (`id`, `name`, `slug`, `tagline`, `service_category_id`, `price`, `discount`, `discount_type`, `image`, `thumbnail`, `description`, `link`, `inclusion`, `exclusion`, `status`, `created_at`, `updated_at`, `featured`) VALUES
+(1, 'Air Conditioner Cleaning', 'air-conditioner-cleaning', 'Air Conditioner Cleaning', 1, '150.00', NULL, NULL, 'service_4.jpg', 'service_4.jpg', 'Air Conditioner Deep Cleaning', NULL, '', '', 1, '2022-11-15 11:47:39', '2022-11-16 18:41:27', 1),
+(3, 'Air Conditioner Maintenance', 'air-conditioner-maintenance', 'Air Conditioner Maintenance', 1, '75.00', NULL, NULL, 'service_3.jpg', 'service_3.jpg', 'Genarel Aircond Maintenance', NULL, 'Gas Refill | Get Rid Of Dust Bunnies', '', 1, '2022-11-15 11:47:39', '2022-11-16 19:15:02', 1),
+(4, 'Gas topup', 'gas-topup', 'Gas Topup', 1, '120.00', '10.00', 'fixed', '1668724519.jpg', '1668604851.jpg', 'testing new service function', 'https://buy.stripe.com/test_8wMdTwgKngo01KEcMM', '', '', 1, '2022-11-15 07:33:02', '2022-11-17 14:35:19', 1),
+(6, 'Plumbing', 'plumbing', 'Clogged pipe? Call us now!', 8, '75.00', '10.00', 'fixed', '1668652104.jpg', '1668652104.jpg', 'Clogged pipe? Call us now!', NULL, '', '', 1, '2022-11-16 18:28:24', '2022-11-17 14:11:24', 0),
+(7, 'AC', 'ac', 'AC Maintenance', 3, '100.00', '1.00', 'fixed', '1668671140.jpg', '1668671140.jpg', 'AC Maintenance', NULL, '', '', 1, '2022-11-16 23:45:40', '2022-11-17 14:13:23', 1),
+(8, 'Painting', 'painting', 'Painting', 6, '555.00', '2.00', 'percent', '1668723000.jpg', '1668723000.jpg', 'Painting', NULL, '', '', 1, '2022-11-17 14:10:00', '2022-11-17 14:13:42', 0);
 
 -- --------------------------------------------------------
 
@@ -234,7 +243,7 @@ CREATE TABLE `service_categories` (
 --
 
 INSERT INTO `service_categories` (`id`, `name`, `slug`, `image`, `created_at`, `updated_at`, `featured`) VALUES
-(1, 'Air Conditioner', 'air-conditioner-service', '1668515289.png', '2022-11-15 03:27:41', '2022-11-16 23:09:59', 1),
+(1, 'AC', 'ac', '1668515289.png', '2022-11-15 03:27:41', '2022-11-17 18:03:57', 1),
 (3, 'Appliance', 'appliance', '1668522780.png', '2022-11-15 06:33:00', '2022-11-16 23:10:15', 1),
 (4, 'Home Needs', 'home-needs', '1668651595.png', '2022-11-16 18:19:55', '2022-11-16 23:19:32', 1),
 (5, 'Home Cleaning', 'home-cleaning', '1668651619.png', '2022-11-16 18:20:19', '2022-11-16 23:10:32', 1),
@@ -262,7 +271,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('XZPsRppMIRcjclzNwzafHMWd8EgS8zBgwl03ijYB', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'YTo1OntzOjY6Il90b2tlbiI7czo0MDoiVndtVnVLSURkckhiVWF3YXJScVY3VXhUcE83V1BzejdERUlEaWdwUCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jdXN0b21lci9jb25maXJtLWJvb2tpbmcvcGx1bWJpbmciO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJFAzTnlvZXRZejlZTXFNNHB2eW8ydS5pUW1MVWJpWXFWSHpYeE03WnIxRlczNjQuLm56ZDM2Ijt9', 1668720317);
+('3KLuFAJj9zFG6ur9w3a5dzfDaBPNiQAEHdkJ5nEC', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNW1TZ2lLTUJkNDJsNWZlelpjZ1pORFdTQjFmSzNuZ1hTSUdWb3FLMiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fX0=', 1668783437);
 
 -- --------------------------------------------------------
 
@@ -286,7 +295,8 @@ CREATE TABLE `sliders` (
 INSERT INTO `sliders` (`id`, `title`, `image`, `status`, `created_at`, `updated_at`) VALUES
 (2, 'Second Slide Lesgo', '1667500741.jpg', 1, '2022-11-03 10:39:01', '2022-11-16 00:38:32'),
 (3, 'Aircond', '1667501346.jpg', 1, '2022-11-03 10:49:06', '2022-11-03 10:49:45'),
-(4, 'Test new Slide', '1668587966.jpg', 1, '2022-11-16 00:39:26', '2022-11-16 00:39:33');
+(4, 'Vacuum', '1668587966.jpg', 0, '2022-11-16 00:39:26', '2022-11-17 22:42:55'),
+(7, 'Slide1_Tips', '1668753758.jpg', 1, '2022-11-17 22:42:38', '2022-11-17 22:42:38');
 
 -- --------------------------------------------------------
 
@@ -317,7 +327,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `two_factor_confirmed_at`, `remember_token`, `current_team_id`, `profile_photo_path`, `utype`, `created_at`, `updated_at`) VALUES
 (1, 'Muhammad Rais Irfan', 'raisirfan2002@gmail.com', '2022-11-03 10:37:39', '$2y$10$P3NyoetYz9YMqM4pvyo2u.iQmLUbiYqVHzXxM7Zr1FW364..nzd36', NULL, NULL, NULL, NULL, NULL, NULL, 'ADM', '2022-11-03 10:36:52', '2022-11-03 10:37:39'),
-(2, 'Rais', 'customer12@gmail.com', '2022-11-16 00:31:20', '$2y$10$h/edQ/YBkkHDAfK5w0y6W.02dmZRezX74Oo0AOPzPJIvSy1YV7tfq', NULL, NULL, NULL, NULL, NULL, NULL, 'CST', '2022-11-16 00:30:00', '2022-11-16 00:31:20');
+(2, 'Rais', 'customer12@gmail.com', '2022-11-16 00:31:20', '$2y$10$h/edQ/YBkkHDAfK5w0y6W.02dmZRezX74Oo0AOPzPJIvSy1YV7tfq', NULL, NULL, NULL, NULL, NULL, NULL, 'CST', '2022-11-16 00:30:00', '2022-11-16 00:31:20'),
+(3, 'fathiya', 'yayafathiya030602@gmail.com', '2022-11-18 04:42:27', '$2y$10$2KccuYb45no0OdWSWLYW7ea24MxznFcogKbjixfK6lJCcAK6xslBe', NULL, NULL, NULL, NULL, NULL, NULL, 'CST', '2022-11-18 04:41:38', '2022-11-18 04:42:27');
 
 --
 -- Indexes for dumped tables
@@ -328,6 +339,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `tw
 --
 ALTER TABLE `bookings`
   ADD PRIMARY KEY (`id`),
+  ADD KEY `user_id` (`user_id`),
   ADD KEY `bookings_service_id_foreign` (`service_id`);
 
 --
@@ -414,7 +426,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -444,13 +456,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `profiles`
 --
 ALTER TABLE `profiles`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `service_categories`
@@ -462,13 +474,13 @@ ALTER TABLE `service_categories`
 -- AUTO_INCREMENT for table `sliders`
 --
 ALTER TABLE `sliders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -478,7 +490,8 @@ ALTER TABLE `users`
 -- Constraints for table `bookings`
 --
 ALTER TABLE `bookings`
-  ADD CONSTRAINT `bookings_service_id_foreign` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `bookings_service_id_foreign` FOREIGN KEY (`service_id`) REFERENCES `services` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `bookings_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `profiles` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `profiles`

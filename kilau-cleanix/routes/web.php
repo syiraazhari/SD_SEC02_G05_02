@@ -18,6 +18,7 @@ use App\Http\Livewire\Admin\AdminViewOrderHistory;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\Customer\ConfirmBookingComponent;
 use App\Http\Livewire\Customer\CustomerDashboardComponent;
+use App\Http\Livewire\Customer\ViewOrderHistoryComponent;
 use App\Http\Livewire\KilauCleanix2;
 use App\Http\Livewire\ServiceCategoriesComponent;
 use App\Http\Livewire\ServiceDetailsComponent;
@@ -62,6 +63,7 @@ Route::middleware([
     Route::get('/user/profile/edit',UserEditProfileComponent::class)->name('user.editprofile');
     Route::get('/user/change-password',UserChangePasswordComponent::class)->name('user.changepassword');
     Route::get('/customer/confirm-booking/{service_slug}',ConfirmBookingComponent::class)->name('customer.confirm_booking');
+    Route::get('/customer/booking-history',ViewOrderHistoryComponent::class)->name('customer.booking_history');
 });
 
 
